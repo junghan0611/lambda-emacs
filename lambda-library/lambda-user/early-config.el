@@ -6,25 +6,25 @@
 
 ;;; Frame & Colors
 ;; ;; Set colors correctly so there is no flash at startup
-(cond ((string= (shell-command-to-string "dark-mode status") "on\n")
-       (setq active-theme 'dark-theme))
-      (t
-       (setq active-theme 'light-theme)))
+;; (cond ((string= (shell-command-to-string "dark-mode status") "on\n")
+;;        (setq active-theme 'dark-theme))
+;;       (t
+;;        (setq active-theme 'light-theme)))
 
-(setq-default initial-frame-alist
-              (append (list
-                       '(fullscreen . maximized)
-                       `(background-color . ,(if (eq active-theme 'light-theme) "#fffefd" "#141414"))
-                       `(foreground-color . ,(if (eq active-theme 'light-theme) "#141414" "#A3A3A3"))
-                       '(internal-border-width . 12)
-                       '(tool-bar-lines . 0)
-                       '(vertical-scroll-bars . nil)
-                       '(horizontal-scroll-bars . nil)
-                       '(undecorated . nil))))
+;; (setq-default initial-frame-alist
+;;               (append (list
+;;                        '(fullscreen . maximized)
+;;                        `(background-color . ,(if (eq active-theme 'light-theme) "#fffefd" "#141414"))
+;;                        `(foreground-color . ,(if (eq active-theme 'light-theme) "#141414" "#A3A3A3"))
+;;                        '(internal-border-width . 12)
+;;                        '(tool-bar-lines . 0)
+;;                        '(vertical-scroll-bars . nil)
+;;                        '(horizontal-scroll-bars . nil)
+;;                        '(undecorated . nil))))
 
-;; No modeline at startup
-(setopt mode-line-format nil)
-(setopt header-line-format nil)
+;; ;; No modeline at startup
+;; (setopt mode-line-format nil)
+;; (setopt header-line-format nil)
 
 ;;;; Package settings
 ;; Don't auto ensure packages with use-package
@@ -54,7 +54,7 @@
                                     macrostep
 
                                     ;; frames
-                                    ns-auto-titlebar
+                                    ;; ns-auto-titlebar
 
                                     ;; windows
                                     ace-window
@@ -156,7 +156,7 @@
                                     denote
                                     citar-denote
                                     consult-notes
-                                    obsidian
+                                    ;; obsidian
 
                                     ;; programming
                                     aggressive-indent
@@ -221,9 +221,9 @@
                                     elfeed-tube
 
                                     ;; macos
-                                    reveal-in-osx-finder
-                                    grab-mac-link
-                                    osx-lib
+                                    ;; reveal-in-osx-finder
+                                    ;; grab-mac-link
+                                    ;; osx-lib
 
                                     ;; mail
                                     org-msg
@@ -296,8 +296,6 @@
 
 ;; Install packages if missing
 (lem-install-missing-packages)
-
-
 
 
 ;;; early-config.el ends here

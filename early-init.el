@@ -324,3 +324,20 @@ Any customized libraries not available via standard package repos like elpa or m
          (message "Loading default settings."))))
 
 ;;; early-init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-vc-selected-packages
+   '((org-modern-indent :url "https://github.com/jdtsmith/org-modern-indent")
+     (org-devonthink :url "https://github.com/lasvice/org-devonthink" :branch "master")
+     (pulsing-cursor :url "https://github.com/jasonjckn/pulsing-cursor" :branch "main")
+     (bibtex-capf :url "https://github.com/mclear-tools/bibtex-capf.git" :branch "main")
+     (zotxt-emacs :url "https://github.com/egh/zotxt-emacs.git" :branch "master"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

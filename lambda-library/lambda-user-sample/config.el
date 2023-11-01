@@ -334,8 +334,8 @@
 
                                  ;; OS settings
                                  ;; loads only if on macos
-                                 (when sys-mac
-                                   'lem-setup-macos)
+                                 ;; (when sys-mac
+                                 ;;   'lem-setup-macos)
 
                                  ;; Splash
                                  'lem-setup-splash
